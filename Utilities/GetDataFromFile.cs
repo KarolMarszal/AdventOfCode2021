@@ -14,7 +14,13 @@ namespace Utilities
                 path = @"C:\Users\Karol\source\repos\AdventOfCode2021\" + day + ".txt";
             if (path != "")
                 content = new List<string>(File.ReadAllLines(path));
+            else
+                Console.WriteLine("File does not exist!");
             return content;
         }
+
+        static void Main(string[] args)
+        { }
+
     }
 }
